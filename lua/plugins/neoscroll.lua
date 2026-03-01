@@ -20,9 +20,9 @@ return {
     local function one_third() return math.floor(vim.api.nvim_win_get_height(0) / 3) end
 
     -- Scroll down one-third of the window
-    vim.keymap.set('n', '<C-d>', function() scroll(one_third(), { move_cursor = true, duration = 100 }) end, { desc = 'Scroll down one-third of screen' })
+    vim.keymap.set('n', '<C-d>', function() scroll(one_third(), { move_cursor = true, duration = 200 }) end, { desc = 'Scroll down one-third of screen' })
 
     -- Scroll up one-third of the window
-    vim.keymap.set('n', '<C-u>', function() scroll(-one_third(), { move_cursor = true, duration = 100 }) end, { desc = 'Scroll up one-third of screen' })
+    vim.keymap.set('n', '<C-u>', function() scroll(-one_third(), { move_cursor = true, duration = 200 }) end, { desc = 'Scroll up one-third of screen' })
   end,
 }
