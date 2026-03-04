@@ -26,8 +26,29 @@ require 'keymaps'
 
 -- [[ Configure and install plugins ]]
 require('lazy').setup({
-  --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  { import = 'plugins' },
+  require 'plugins.autopairs',
+  require 'plugins.blink',
+  require 'plugins.cmake-tools',
+  require 'plugins.colortheme',
+  require 'plugins.conform',
+  require 'plugins.debug',
+  require 'plugins.gitsigns',
+  require 'plugins.guess-indent',
+  require 'plugins.health',
+  require 'plugins.indent_line',
+  require 'plugins.lazygit',
+  require 'plugins.lint',
+  require 'plugins.mini-nvim',
+  require 'plugins.neoscroll',
+  require 'plugins.neo-tree',
+  require 'plugins.nvim-lspconfig',
+  require 'plugins.nvim-tree',
+  require 'plugins.nvim-treesitter',
+  require 'plugins.telescope',
+  require 'plugins.todo-comments',
+  require 'plugins.toggleterm',
+  require 'plugins.which-key',
+  require 'plugins.barbar',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the

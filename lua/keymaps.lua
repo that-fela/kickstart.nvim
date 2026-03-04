@@ -38,3 +38,12 @@ vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left wind
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
+
+-- Optional: keymaps for buffer navigation
+vim.keymap.set('n', '<leader>h', '<Cmd>BufferPrevious<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>l', '<Cmd>BufferNext<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>D', '<Cmd>BufferClose<CR>', { noremap = true, silent = true })
+
+-- Optional: make splits start with current buffer active
+vim.keymap.set('n', '<leader>vs', '<C-w>v', { noremap = true, silent = true }) -- vertical split
+vim.keymap.set('n', '<leader>hs', '<C-w>s', { noremap = true, silent = true }) -- horizontal split
